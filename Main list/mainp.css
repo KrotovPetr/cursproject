@@ -34,7 +34,7 @@
     display:flex;
     justify-content: flex-start;
     align-items: center;
-    width:100%;
+    width:fit-content;
     min-height:20px;
 
 }
@@ -53,7 +53,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    min-width: 500px;
+    min-width: fit-content;
     min-height:280px;
 }
 .cinema .slider{
