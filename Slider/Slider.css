@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    display:flex;
+
+    border: 1px solid black;
+    flex:2;
+    height:100%;
+    width:100%;
+}
+.rec{
+    border: 1px solid black;
+    flex:1;
+    height:100%;
+    width:100%;
+}
+.main{
+    display:flex;
+    flex-grow: 1;
+    height:20em;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+*{margin: 0}
+.rec{
+    display:flex;
+    width:50%;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+    border:1px solid black;
+}
+.content{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+
+
+}
+.head1{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.block1, .block2, .block3, .block4, .block5, .block6{
+    flex-flow: column wrap;
+    width:40%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin:2px;
+    padding:4px;
+    display:flex;
+    border:1px solid black;
+    border-radius:10px;
+
+
+}
+
+.content::after{
+    background: url(https://facte.ru/wp-content/uploads/2017/02/pingvin.jpg) no-repeat center top;
+    background-size: cover;
+}

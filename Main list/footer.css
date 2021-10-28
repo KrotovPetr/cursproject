@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto:wght@400;700&display=swap');
+li{
+    list-style-type:none;
+    padding: 0 5px 3px 0;
+}
+.footer{
+    min-height: 150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    background-color: #0D0000;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.chapters{
+    flex: 1 1 auto;
+    font-family: 'Comfortaa', cursive;
+    color:#FFFFFF;
+}
+.About_us{
+    flex: 7 7 auto;
+    font-family: 'Comfortaa', cursive;
+    color:#FFFFFF;
+    justify-self: flex-start;
+    align-items: flex-start;
+}
+.support{
+    flex: 7 7 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Comfortaa', cursive;
+    color:#FFFFFF;
+    padding: 0 10px 0 0;
+}
+
+.support .join, .support .join_us{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+}
+
+.vk , .facebook, .twitter, .telegram{
+    margin: 5px;
+}
+
+@media (max-device-width: 500px), (max-width: 500px){
+    .footer {
+        flex-flow: column-reverse nowrap;
+        height:100px;
+    }
+    .footer .support{
+        padding:0;
+    }
+    .support{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .chapters, .About_us{
+        display: none;
+    }
+    .vk , .facebook, .twitter, .telegram{
+        margin: 7px;
+    }
+
+}

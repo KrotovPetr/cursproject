@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto:wght@400;700&display=swap');
+@media (max-device-width: 500px), (max-width: 500px) {
+.header{
+    flex-flow: column nowrap;
+    font-size: max(7vw, 15);}
+}
+.name{
+    flex-flow: row nowrap;
+}
+
+@media (min-device-width: 500px), (min-width: 500px){
+.header{
+    width: 100%;
+    min-height:100px;
+    flex-flow: row wrap;
+}
+}
+
+*{
+    margin:0;
+}
+
+.header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: #0D0000;
+    border-radius: 0px 0px 10px 10px;
+    color: #F2F2F2;
+}
+.header1{
+    display:flex;
+    place-content: center;
+    flex-flow: row wrap;
+    width:100%;
+}
+
+
+.name{
+    display:flex;
+    place-content: center center;
+    flex-flow: row wrap;
+    padding:5px 5px 5px 20px ;
+    flex:1 1 auto;
+
+}
+
+.namesite{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    padding:0px 8px 0px 8px ;
+
+}
+
+
+
+.logo{
+    justify-self: flex-start;
+}
+
+.logo img{
+    border-radius: 30px;
+
+}
+
+
+
+
+
+.otherheaders{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow:column wrap;
+    flex:5 5 auto;
+}
+
+
+.menu{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow:column wrap;
+    min-height: 30px;
+    min-width: 30px;
+    padding: 0 30px 0px 0px;
+    border-radius: 10px;
+
+}
+
+.submenu{
+    padding: 15px 0px 10px 0px;
+    flex-direction: column;
+    display: none;
+}
+
+
+.submenu[active=true]{
+    display: flex;
+}
+
+
+.submenu[active=true]:nth-child(n){
+    grid-gap:10px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about:hover, .services:hover{
+    text-decoration: underline;
+    transform: translateX(-2px);
+    transform: translateY(2px);
+}
+.contacts span{
+    color: #696565;
+}
+.contacts span:hover{
+    text-decoration: underline;
+    color:#F2F2F2;
+}
