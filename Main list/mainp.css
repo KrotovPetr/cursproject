@@ -59,6 +59,11 @@
 .cinema .slider{
     min-height:380px;
 }
+.sliderContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .slider{
     margin:5px;
     width:100%;
@@ -67,12 +72,17 @@
     position:relative;
     border-radius:10px;
 }
+
 .photo{
     position:absolute;
     animation:round 16s infinite;
     opacity:0;
-    width:90%;
+    width:300px;
+    height: 400px;
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -80,25 +90,21 @@
     25%{opacity:1}
     40%{opacity:0}
 }
-img:nth-child(1){
+.slider div:nth-child(1){
     animation-delay:12s;
     background-image: url("https://fs.kinomania.ru/file/film_poster/0/13/01374e60767f6a7bf7fea33ea0c49048.jpeg");
-    background-size: 500px 380px;
 }
-img:nth-child(2){
+.slider div:nth-child(2){
     animation-delay:8s;
     background-image: url("https://mamasgeeky.com/wp-content/uploads/2021/09/dune-movie-poster.jpg");
-    background-size: 500px 380px;
 }
-img:nth-child(3){
+.slider div:nth-child(3){
     animation-delay:4s;
     background-image: url("https://filmnavi.ru/images/movie_posters/687/686898/rjM13nwgzt80xAUKXVp9mzRYyHp.jpg");
-    background-size: 500px 380px;
 }
-img:nth-child(4){
+.slider div:nth-child(4){
     animation-delay:0s;
     background-image: url("https://cheboksary.ananasposter.ru/image/catalog/poster/film/83/10267.jpg");
-    background-size: 500px 380px;
 }
 
 
