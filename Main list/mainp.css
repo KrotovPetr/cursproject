@@ -25,7 +25,7 @@
 .cinema{
      display:flex;
      justify-content: center;
-     align-items: center;
+     align-items: flex-start;
      width:100%;
      min-height:20px;
      flex-flow: column nowrap;
@@ -61,33 +61,51 @@
 }
 .slider{
     margin:5px;
-    width:490px;
+    width:100%;
+    max-width: 500px;
     overflow:hidden;
     position:relative;
     border-radius:10px;
 }
-.photo_slider_css{position:absolute;
+.photo{
+    position:absolute;
     animation:round 16s infinite;
     opacity:0;
     width:90%;
-    border-radius: 10px;}
+    border-radius: 10px;
+}
+
+
 @keyframes round {
     25%{opacity:1}
     40%{opacity:0}
 }
-img:nth-child(1){animation-delay:12s}
-img:nth-child(2){animation-delay:8s}
-img:nth-child(3){animation-delay:4s}
-img:nth-child(4){animation-delay:0s}
-@media(min-width:0px) and (max-width:320px) {
-    .slider{width:80%;height:190px}
+img:nth-child(1){
+    animation-delay:12s;
+    background-image: url("https://fs.kinomania.ru/file/film_poster/0/13/01374e60767f6a7bf7fea33ea0c49048.jpeg");
+    background-size: 500px 380px;
 }
-@media(min-width:321px) and (max-width:480px) {
-    .slider{width:80%;height:190px}
+img:nth-child(2){
+    animation-delay:8s;
+    background-image: url("https://mamasgeeky.com/wp-content/uploads/2021/09/dune-movie-poster.jpg");
+    background-size: 500px 380px;
+}
+img:nth-child(3){
+    animation-delay:4s;
+    background-image: url("https://filmnavi.ru/images/movie_posters/687/686898/rjM13nwgzt80xAUKXVp9mzRYyHp.jpg");
+    background-size: 500px 380px;
+}
+img:nth-child(4){
+    animation-delay:0s;
+    background-image: url("https://cheboksary.ananasposter.ru/image/catalog/poster/film/83/10267.jpg");
+    background-size: 500px 380px;
 }
 
 
-@media (min-device-width: 500px), (min-width: 500px){
-
-
+@media(max-width: 500px){
+    .slider{
+        max-width:300px;
+        height:190px;
+    }
 }
+
