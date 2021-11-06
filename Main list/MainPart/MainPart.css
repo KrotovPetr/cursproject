@@ -61,11 +61,14 @@
 }
 
 .sliderContainer{
-    width: 100%;
+    width: 90vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex:1 1 auto;
 }
-.slider{
+
+.slider, .description{
     margin:5px;
     width:100%;
     max-width: 500px;
@@ -87,11 +90,39 @@
 }
 
 
+
+.filmCard{
+    position:absolute;
+    animation:round 16s infinite;
+    opacity:0;
+
+}
+
 @keyframes round {
     25%{opacity:1}
     40%{opacity:0}
 }
-.slider div:nth-child(1){
+
+
+.description div:nth-child(1){
+    animation-delay:12s;
+
+}
+.description div:nth-child(2){
+    animation-delay:8s;
+
+}
+.description div:nth-child(3){
+    animation-delay:4s;
+
+}
+.description div:nth-child(4){
+    animation-delay:0s;
+
+}
+
+
+.slider div:nth-child(1) {
     animation-delay:12s;
     background-image: url("https://fs.kinomania.ru/file/film_poster/0/13/01374e60767f6a7bf7fea33ea0c49048.jpeg");
 }
@@ -107,7 +138,6 @@
     animation-delay:0s;
     background-image: url("https://cheboksary.ananasposter.ru/image/catalog/poster/film/83/10267.jpg");
 }
-
 
 @media(max-width: 500px){
     .slider{
