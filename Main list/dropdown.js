@@ -6,3 +6,14 @@ function myFunction(e){
         document.getElementById("submenu").setAttribute("active","true")
     }
 }
+
+
+
+function myFunction2(e){
+    let isActive = document.getElementById("dropdownlist").getAttribute("active")
+    if(isActive?.toString()==="true"){
+        document.getElementById("dropdownlist").setAttribute("active","false")
+    }else{
+        document.getElementById("dropdownlist").setAttribute("active","true")
+    }
+}

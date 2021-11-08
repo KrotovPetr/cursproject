@@ -49,7 +49,7 @@
 }
 
 
-.recsCard{
+.recsCard, .recsback{
     display:flex;
     flex-flow:column nowrap;
     justify-content: center;
@@ -67,36 +67,41 @@
 
 .recscardName{
     font-size: 25px;
+    position:absolute;
 }
 
-.recsCard:hover{
+.recsback{
+    position:absolute;
+}
+
+.recsback:hover{
    filter:blur(3px);
-   transform: translate(-2px,-2px);
+
 }
 
-.recs .recsslide .recsCard:nth-child(1){
+.recs .recsslide .recsCard:nth-child(1) .recsback{
     background: radial-gradient(at top, #0b72da, #A7CECC);
 }
-.recs .recsslide .recsCard:nth-child(2){
+.recs .recsslide .recsCard:nth-child(2) .recsback{
     background:linear-gradient(to top left, #10899c, #d97381);
 }
 
-.recs .recsslide .recsCard:nth-child(3){
+.recs .recsslide .recsCard:nth-child(3) .recsback{
     background:linear-gradient(to top left, #d9cb73, #1c4aa9);
 }
-.recs .recsslide .recsCard:nth-child(4){
+.recs .recsslide .recsCard:nth-child(4) .recsback{
     background:linear-gradient(to top right, #8dd973, #a91c52);
 }
-.recs .recsslide .recsCard:nth-child(5){
+.recs .recsslide .recsCard:nth-child(5) .recsback{
     background:linear-gradient(to bottom left, #232622, #a91c52);
 }
-.recs .recsslide .recsCard:nth-child(6){
+.recs .recsslide .recsCard:nth-child(6) .recsback{
     background:linear-gradient(to bottom right, #100e19, #789fd0);
 }
-.recs .recsslide .recsCard:nth-child(7){
+.recs .recsslide .recsCard:nth-child(7) .recsback{
     background:linear-gradient(30deg, #8d8b9a, #a91c52);
 }
-.recs .recsslide .recsCard:nth-child(8){
+.recs .recsslide .recsCard:nth-child(8) .recsback{
     background:linear-gradient(to bottom right, #8dd973, #d9cb73);
 }
 
@@ -106,8 +111,8 @@
 
 .cinema{
     display:flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-flow: column nowrap;
     height: fit-content;
     min-height: 400px;
@@ -116,14 +121,18 @@
     margin-top: 10px;
 }
 
+.cinema .name{
+    align-self: flex-start;
+}
+
 
 .container_slider_css{
-    margin:50px auto;
+    margin:20px;
     width:80vw;
     height:50vw;
     border-radius:10px;
     overflow:hidden;
-    position:relative
+    position:relative;
 }
 .photo{
     position:absolute;
@@ -158,10 +167,21 @@
     animation-delay:0s;
 }
 
+.level{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
 
-
-
+.dropdownlist{
+    background-image: url("https://million-wallpapers.ru/wallpapers/2/92/479366668304307/chernyj.jpg");
+    background-size: 5vw;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vw;
+}
 
 
 
@@ -173,8 +193,9 @@
     }
     .recsslide{
         flex-flow:column wrap;
+
     }
-    .recsCard{
+    .recsCard, .recsback{
         width:70vw;
     }
     .recs{
