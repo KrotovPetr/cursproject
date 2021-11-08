@@ -22,16 +22,10 @@
     margin-top: 10px;
 
 }
-.cinema{
-     display:flex;
-     justify-content: center;
-     align-items: flex-start;
-     width:100%;
-     height:40vw;
-     min-height:20px;
-     flex-flow: column nowrap;
- }
-.recs .name,.cinema .name{
+
+
+
+.recs .name, .cinema .name{
     display:flex;
     justify-content: flex-start;
     align-items: center;
@@ -40,50 +34,19 @@
 
 }
 
-.recs .name:hover, .cinema .name:hover{
+.recs .name:active, .cinema .name:hover{
+    transform: translateX(-2px);
+    transform: translateY(2px);
     text-decoration: underline;
 }
 
-.recs .name:active, .cinema .name:active{
-    transform: translateX(-2px);
-    transform: translateY(2px);
-
-}
-
-.recs .recsslide, .cinema .slider{
+.recs .recsslide{
     display:flex;
     justify-content: center;
     align-items: center;
     min-width: fit-content;
-
     flex-flow: row wrap;
 }
-.cinema .slider{
-    min-height:380px;
-}
-
-.sliderContainer{
-    width: 40vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex:1 1 auto;
-}
-
-
-
-.photo{
-    position:absolute;
-    animation:round 16s infinite;
-    opacity:0;
-    width:20vw;
-    height: 30vw;
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 
 
 .recsCard{
@@ -98,66 +61,110 @@
     border-radius: 10px;
     min-width: 150px;
     min-height: 150px;
-}
-.recsCard{
-
-    background-size: 20vw 20vw;
     background-repeat: no-repeat;
-}
-recsslide:hover{
-   filter:blur(7px);
-}
-.recsslide .recsCard:nth-child(1){
-background-image: url("https://get.wallhere.com/photo/Arnold-Schwarzenegger-movies-musician-fashion-Jason-Statham-Sylvester-Stallone-Bruce-Willis-The-Expendables-2-1920x1080-px-album-cover-action-film-591297.jpg");
-}
-.recsslide .recsCard:nth-child(2){
-background-image: url("https://w-dog.ru/wallpapers/11/10/465828454796514/park-tyulpany-giacinty-mnogo-cvety-foto.jpg");
+
 }
 
-.recsslide .recsCard:nth-child(3){
-    background-image: url("https://w-dog.ru/wallpapers/11/10/465828454796514/park-tyulpany-giacinty-mnogo-cvety-foto.jpg");
-}
-.recsslide .recsCard:nth-child(4){
-    background-image: url("https://w-dog.ru/wallpapers/11/10/465828454796514/park-tyulpany-giacinty-mnogo-cvety-foto.jpg");
-}
-.recsslide .recsCard:nth-child(5){
-    background-image: url("https://w-dog.ru/wallpapers/11/10/465828454796514/park-tyulpany-giacinty-mnogo-cvety-foto.jpg");
-}
-.recsslide .recsCard:nth-child(6){
-    background-image: url("https://w-dog.ru/wallpapers/11/10/465828454796514/park-tyulpany-giacinty-mnogo-cvety-foto.jpg");
+.recscardName{
+    font-size: 25px;
 }
 
-.recsslide .recsCard:nth-child(7){
-    background-image: url("https://w-dog.ru/wallpapers/11/10/465828454796514/park-tyulpany-giacinty-mnogo-cvety-foto.jpg");
+.recsCard:hover{
+   filter:blur(3px);
+   transform: translate(-2px,-2px);
 }
-.recsslide .recsCard:nth-child(8){
-    background-image: url("https://w-dog.ru/wallpapers/11/10/465828454796514/park-tyulpany-giacinty-mnogo-cvety-foto.jpg");
+
+.recs .recsslide .recsCard:nth-child(1){
+    background: radial-gradient(at top, #0b72da, #A7CECC);
+}
+.recs .recsslide .recsCard:nth-child(2){
+    background:linear-gradient(to top left, #10899c, #d97381);
+}
+
+.recs .recsslide .recsCard:nth-child(3){
+    background:linear-gradient(to top left, #d9cb73, #1c4aa9);
+}
+.recs .recsslide .recsCard:nth-child(4){
+    background:linear-gradient(to top right, #8dd973, #a91c52);
+}
+.recs .recsslide .recsCard:nth-child(5){
+    background:linear-gradient(to bottom left, #232622, #a91c52);
+}
+.recs .recsslide .recsCard:nth-child(6){
+    background:linear-gradient(to bottom right, #100e19, #789fd0);
+}
+.recs .recsslide .recsCard:nth-child(7){
+    background:linear-gradient(30deg, #8d8b9a, #a91c52);
+}
+.recs .recsslide .recsCard:nth-child(8){
+    background:linear-gradient(to bottom right, #8dd973, #d9cb73);
 }
 
 
+
+
+
+.cinema{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    height: fit-content;
+    min-height: 400px;
+    width:100%;
+    border: 1px solid #000000;
+    margin-top: 10px;
+}
+
+
+.container_slider_css{
+    margin:50px auto;
+    width:80vw;
+    height:50vw;
+    border-radius:10px;
+    overflow:hidden;
+    position:relative
+}
+.photo{
+    position:absolute;
+    animation:round 16s infinite;
+    opacity:0;
+    width:100%;
+    height:50vw;
+}
 @keyframes round {
     25%{opacity:1}
     40%{opacity:0}
 }
 
-
-
-.slider div:nth-child(1) {
+.photo:nth-child(1){
+    background-image:url("https://kinofilmpro.ru/wp-content/uploads/2020/04/art33-768x632.jpg");
+    background-size:80vw 50vw;
     animation-delay:12s;
-    background-image: url("https://fs.kinomania.ru/file/film_poster/0/13/01374e60767f6a7bf7fea33ea0c49048.jpeg");
 }
-.slider div:nth-child(2){
+.photo:nth-child(2){
+    background-image:url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
+    background-size:80vw 50vw;
     animation-delay:8s;
-    background-image: url("https://mamasgeeky.com/wp-content/uploads/2021/09/dune-movie-poster.jpg");
 }
-.slider div:nth-child(3){
+.photo:nth-child(3){
+    background-image:url("http://image.tmdb.org/t/p/original/fJWe8TyNJHCybsbdinj0b562FDT.jpg");
+    background-size:80vw 50vw;
     animation-delay:4s;
-    background-image: url("https://filmnavi.ru/images/movie_posters/687/686898/rjM13nwgzt80xAUKXVp9mzRYyHp.jpg");
 }
-.slider div:nth-child(4){
+.photo:nth-child(4){
+    background-image:url("https://www.kinodrive.com/images/tron-legacy/tron-legacy-11007.jpg");
+    background-size:80vw 50vw;
     animation-delay:0s;
-    background-image: url("https://cheboksary.ananasposter.ru/image/catalog/poster/film/83/10267.jpg");
 }
+
+
+
+
+
+
+
+
 
 @media(max-width: 500px){
     .slider{
@@ -169,10 +176,10 @@ background-image: url("https://w-dog.ru/wallpapers/11/10/465828454796514/park-ty
     }
     .recsCard{
         width:70vw;
-
     }
     .recs{
         flex-flow:column wrap;
     }
+    .container_slider_css{width:80vw}
 }
 
