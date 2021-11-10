@@ -172,23 +172,22 @@
     display:none;
     margin:1vw;
 }
-.name[active=true]~.descriptioncin:nth-child(1) .pictd{
+.name[active=true]~.descriptioncin:nth-last-child(4) .pictd{
     background-image: url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
-
 }
-.name[active=true]~.descriptioncin:nth-child(2) .pictd{
+.name[active=true]~.descriptioncin:nth-last-child(3) .pictd{
     background-image: url("https://www.kinodrive.com/images/tron-legacy/tron-legacy-11007.jpg");
 
 }
-.name[active=true]~.descriptioncin:nth-child(3) .pictd{
+.name[active=true]~.descriptioncin:nth-last-child(2) .pictd{
     background-image: url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
 
 }
-.name[active=true]~.descriptioncin:nth-child(4) .pictd{
+.name[active=true]~.descriptioncin:nth-last-child(1) .pictd{
     background-image: url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
 
 }
-.name[active=true]~.descriptioncin:nth-child(n) .pictd{
+.name[active=true]~.descriptioncin:nth-last-child(n) .pictd{
     width:20vw;
     display:flex;
     justify-content: flex-start;
