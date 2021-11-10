@@ -203,11 +203,13 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5vw;
-    height:18vw;
+    font-size: 2vw;
+    height:fit-content;
     border-radius: 10px;
-    padding:1.5vw;
+    min-font-size: 14px;
+    padding:2vw;
     background-color: #292536;
+    text-align: center;
 }
 .name[active=true]~.descriptioncin .descrCard .marks{
     display:flex;
@@ -235,7 +237,9 @@
     margin:2vw;
     row-gap: 2vw;
 }
-
+.submenu2{
+    display:none;
+}
 
 .name[active=true]~.descriptioncin{
     display: flex;
@@ -243,7 +247,7 @@
     justify-content: center;
     align-items:center;
     width:90vw;
-    min-height: 30vw;
+
     height:fit-content;
     min-height:300px;
     background-color: #353149;
@@ -252,7 +256,29 @@
 
 }
 
-@media(min-width: 500px)and(max-width: 500px){
+@media(min-width: 500px) and (max-width: 900px){
+    .name[active=true]~.descriptioncin{
+        flex-flow:column wrap;
+        padding:2vw;
+    }
+    .name[active=true]~.descriptioncin:nth-last-child(n) .pictd{
+        background-size: 40vw 30vw;
+        height:30vw;
+        width:40vw;
+    }
+    .name[active=true]~.descriptioncin .descrCard .descr{
+        width:75vw;
+        padding: 2vw;
+        font-size: 3vw;
+
+    }
+    .name[active=true]~.descriptioncin .descrCard{
+        width:80vw;
+    }
+    .name[active=true]~.descriptioncin .descrCard .namec{
+        font-size: 4vw;
+        height:fit-content;
+    }
 
 }
 
@@ -272,5 +298,55 @@
         flex-flow:column wrap;
     }
     .container_slider_css{width:80vw}
+    .name[active=true]~.descriptioncin{
+        flex-flow:column wrap;
+        padding:2vw;
+        row-gap: 3vw;
+    }
+    .name[active=true]~.descriptioncin:nth-last-child(n) .pictd{
+        background-size: 70vw 50vw;
+        height:50vw;
+        width:70vw;
+    }
+
+    .name[active=true]~.descriptioncin .descrCard{
+        width:80vw;
+        row-gap:3vw;
+    }
+
+    .name[active=true]~.descriptioncin .descrCard .marks{
+       display:none;
+    }
+    .name[active=true]~.descriptioncin .descrCard .descr{
+        display:none;
+    }
+    .name[active=true]~.descriptioncin .descrCard .namec{
+        font-size: 6vw;
+        height:fit-content;
+    }
+    .submenu2{
+        display: flex;
+        width:60vw;
+        height:fit-content;
+        flex-flow:row wrap;
+        justify-content: center;
+        align-items:center;
+        padding:3vw;
+        background-color: #292536;
+        border-radius: 10px;
+
+    }
+    .name[active=true]~.descriptioncin .descrCard .submenu2[active=true] ~ .descr{
+        width:75vw;
+        padding: 2vw;
+        font-size: 5vw;
+        display: flex;
+    }
+    .name[active=true]~.descriptioncin .descrCard .submenu2[active=true]~ .marks {
+        font-size: 6vw;
+        height:fit-content;
+        display: flex;
+    }
+
 }
 
