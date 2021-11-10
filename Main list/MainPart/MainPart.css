@@ -167,22 +167,76 @@
     animation-delay:0s;
 }
 
-.level{
+
+.descriptioncin{
+    display:none;
+    margin:1vw;
+}
+.name[active=true]~.descriptioncin:nth-child(1) .pictd{
+    background-image: url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
+
+}
+.name[active=true]~.descriptioncin:nth-child(2) .pictd{
+    background-image: url("https://www.kinodrive.com/images/tron-legacy/tron-legacy-11007.jpg");
+
+}
+.name[active=true]~.descriptioncin:nth-child(3) .pictd{
+    background-image: url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
+
+}
+.name[active=true]~.descriptioncin:nth-child(4) .pictd{
+    background-image: url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
+
+}
+.name[active=true]~.descriptioncin:nth-child(n) .pictd{
+    width:20vw;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: 20vw 15vw;
+    background-repeat:no-repeat;
+    height:15vw;
+    border-radius:10px;
+}
+.name[active=true]~.descriptioncin .descrCard .descr{
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    font-size: 16px;
+    height:15vw;
+}
+.name[active=true]~.descriptioncin .descrCard .namec{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height:2vw;
+}
+.name[active=true]~.descriptioncin .descrCard {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    height:20vw;
+    width:60vw;
+    margin:2vw;
+    border:1px solid white;
+
 }
 
 
-.dropdownlist{
-    background-image: url("https://million-wallpapers.ru/wallpapers/2/92/479366668304307/chernyj.jpg");
-    background-size: 5vw;
-    background-repeat: no-repeat;
-    width: 5vw;
-    height: 5vw;
-}
+.name[active=true]~.descriptioncin{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items:center;
+    width:90vw;
+    height:30vw;
+    min-height:300px;
+    border:1px solid white;
 
+
+}
 
 
 

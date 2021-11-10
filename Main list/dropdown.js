@@ -10,10 +10,10 @@ function myFunction(e){
 
 
 function myFunction2(e){
-    let isActive = document.getElementById("dropdownlist").getAttribute("active")
+    let isActive = document.getElementById("name").getAttribute("active")
     if(isActive?.toString()==="true"){
-        document.getElementById("dropdownlist").setAttribute("active","false")
+        document.getElementById("name").setAttribute("active","false")
     }else{
-        document.getElementById("dropdownlist").setAttribute("active","true")
+        document.getElementById("name").setAttribute("active","true")
     }
 }
