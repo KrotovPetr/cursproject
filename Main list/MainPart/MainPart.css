@@ -171,21 +171,22 @@
 .descriptioncin{
     display:none;
     margin:1vw;
+
 }
-.name[active=true]~.descriptioncin:nth-child(1) .pictd{
+.name[active=true]~.descriptioncin:nth-last-child(4) .pictd{
     background-image: url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
 
 }
-.name[active=true]~.descriptioncin:nth-child(2) .pictd{
+.name[active=true]~.descriptioncin:nth-last-child(3) .pictd{
     background-image: url("https://www.kinodrive.com/images/tron-legacy/tron-legacy-11007.jpg");
 
 }
-.name[active=true]~.descriptioncin:nth-child(3) .pictd{
-    background-image: url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
+.name[active=true]~.descriptioncin:nth-last-child(2) .pictd{
+    background-image: url("https://kinofilmpro.ru/wp-content/uploads/2020/04/art33-768x632.jpg");
 
 }
-.name[active=true]~.descriptioncin:nth-child(4) .pictd{
-    background-image: url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
+.name[active=true]~.descriptioncin:nth-last-child(1) .pictd{
+    background-image: url("http://image.tmdb.org/t/p/original/fJWe8TyNJHCybsbdinj0b562FDT.jpg");
 
 }
 .name[active=true]~.descriptioncin:nth-child(n) .pictd{
@@ -202,14 +203,26 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    height:15vw;
+    font-size: 1.5vw;
+    height:18vw;
+    border-radius: 10px;
+    padding:1.5vw;
+    background-color: #292536;
+}
+.name[active=true]~.descriptioncin .descrCard .marks{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow:row wrap;
+    width:60vw;
+    font-size: 2.5vw;
+
 }
 .name[active=true]~.descriptioncin .descrCard .namec{
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 2.5vw;
     height:2vw;
 }
 .name[active=true]~.descriptioncin .descrCard {
@@ -217,11 +230,10 @@
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    height:20vw;
+    height:fit-content;
     width:60vw;
     margin:2vw;
-    border:1px solid white;
-
+    row-gap: 2vw;
 }
 
 
@@ -231,14 +243,18 @@
     justify-content: center;
     align-items:center;
     width:90vw;
-    height:30vw;
+    min-height: 30vw;
+    height:fit-content;
     min-height:300px;
-    border:1px solid white;
-
+    background-color: #353149;
+    border-radius:10px;
+    column-gap:2vw;
 
 }
 
+@media(min-width: 500px)and(max-width: 500px){
 
+}
 
 @media(max-width: 500px){
     .slider{
