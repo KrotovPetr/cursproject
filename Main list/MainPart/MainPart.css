@@ -85,7 +85,6 @@
 .recs .recsslide .recsCard:nth-child(2) .recsback{
     background:linear-gradient(to top left, #10899c, #d97381);
 }
-
 .recs .recsslide .recsCard:nth-child(3) .recsback{
     background:linear-gradient(to top left, #d9cb73, #1c4aa9);
 }
@@ -106,9 +105,30 @@
 }
 
 
+.dropdownmenu{
+    display: none;
+}
 
-
-
+.dropdownmenu2{
+    display:flex;
+    width: 75vw;
+    padding:1.5vw;
+    background-color: #353149;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+}
+.dropdownmenu2 .text2{
+    display: none;
+}
+.dropdownmenu2[active=true] .text1{
+    display: none;
+}
+.dropdownmenu2[active=true] .text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .cinema{
     display:flex;
     justify-content: center;
@@ -128,19 +148,21 @@
 
 .container_slider_css{
     margin:20px;
-    width:80vw;
-    height:50vw;
+    width:75vw;
+    height:46vw;
     border-radius:10px;
     overflow:hidden;
     position:relative;
 }
+
 .photo{
     position:absolute;
     animation:round 16s infinite;
     opacity:0;
-    width:100%;
-    height:50vw;
+    width:75vw;
+    height:46vw;
 }
+
 @keyframes round {
     25%{opacity:1}
     40%{opacity:0}
@@ -148,24 +170,25 @@
 
 .photo:nth-child(1){
     background-image:url("https://kinofilmpro.ru/wp-content/uploads/2020/04/art33-768x632.jpg");
-    background-size:80vw 50vw;
     animation-delay:12s;
 }
 .photo:nth-child(2){
     background-image:url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
-    background-size:80vw 50vw;
     animation-delay:8s;
 }
 .photo:nth-child(3){
     background-image:url("http://image.tmdb.org/t/p/original/fJWe8TyNJHCybsbdinj0b562FDT.jpg");
-    background-size:80vw 50vw;
     animation-delay:4s;
 }
 .photo:nth-child(4){
     background-image:url("https://www.kinodrive.com/images/tron-legacy/tron-legacy-11007.jpg");
-    background-size:80vw 50vw;
     animation-delay:0s;
 }
+
+.photo:nth-child(1n){
+    background-size:75vw 46vw;
+}
+
 
 
 .descriptioncin{
@@ -173,23 +196,28 @@
     margin:1vw;
 
 }
-.name[active=true]~.descriptioncin:nth-last-child(4) .pictd{
+
+
+.dropdownmenu2[active=true]~.descriptioncin:nth-last-child(4) .pictd{
     background-image: url("https://i.ytimg.com/vi/kuweAJJFiDU/maxresdefault.jpg");
 
 }
-.name[active=true]~.descriptioncin:nth-last-child(3) .pictd{
+.dropdownmenu2[active=true]~.descriptioncin:nth-last-child(3) .pictd{
     background-image: url("https://www.kinodrive.com/images/tron-legacy/tron-legacy-11007.jpg");
 
 }
-.name[active=true]~.descriptioncin:nth-last-child(2) .pictd{
+.dropdownmenu2[active=true]~.descriptioncin:nth-last-child(2) .pictd{
     background-image: url("https://kinofilmpro.ru/wp-content/uploads/2020/04/art33-768x632.jpg");
 
 }
-.name[active=true]~.descriptioncin:nth-last-child(1) .pictd{
+.dropdownmenu2[active=true]~.descriptioncin:nth-last-child(1) .pictd{
     background-image: url("http://image.tmdb.org/t/p/original/fJWe8TyNJHCybsbdinj0b562FDT.jpg");
 
 }
-.name[active=true]~.descriptioncin:nth-child(n) .pictd{
+
+
+
+.dropdownmenu2[active=true]~.descriptioncin:nth-child(n) .pictd{
     width:20vw;
     display:flex;
     justify-content: flex-start;
@@ -199,7 +227,7 @@
     height:15vw;
     border-radius:10px;
 }
-.name[active=true]~.descriptioncin .descrCard .descr{
+.dropdownmenu2[active=true]~.descriptioncin .descrCard .descr{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -211,7 +239,7 @@
     background-color: #292536;
     text-align: center;
 }
-.name[active=true]~.descriptioncin .descrCard .marks{
+.dropdownmenu2[active=true]~.descriptioncin .descrCard .marks{
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -220,14 +248,14 @@
     font-size: 2.5vw;
 
 }
-.name[active=true]~.descriptioncin .descrCard .namec{
+.dropdownmenu2[active=true]~.descriptioncin .descrCard .namec{
     display:flex;
     justify-content: center;
     align-items: center;
     font-size: 2.5vw;
     height:2vw;
 }
-.name[active=true]~.descriptioncin .descrCard {
+.dropdownmenu2[active=true]~.descriptioncin .descrCard {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +269,7 @@
     display:none;
 }
 
-.name[active=true]~.descriptioncin{
+.dropdownmenu2[active=true]~.descriptioncin{
     display: flex;
     flex-flow:row wrap;
     justify-content: center;
@@ -257,25 +285,25 @@
 }
 
 @media(min-width: 500px) and (max-width: 900px){
-    .name[active=true]~.descriptioncin{
+    .dropdownmenu2[active=true]~.descriptioncin{
         flex-flow:column wrap;
         padding:2vw;
     }
-    .name[active=true]~.descriptioncin:nth-last-child(n) .pictd{
+    .dropdownmenu2[active=true]~.descriptioncin:nth-last-child(n) .pictd{
         background-size: 40vw 30vw;
         height:30vw;
         width:40vw;
     }
-    .name[active=true]~.descriptioncin .descrCard .descr{
+    .dropdownmenu2[active=true]~.descriptioncin .descrCard .descr{
         width:75vw;
         padding: 2vw;
         font-size: 3vw;
 
     }
-    .name[active=true]~.descriptioncin .descrCard{
+    .dropdownmenu2[active=true]~.descriptioncin .descrCard{
         width:80vw;
     }
-    .name[active=true]~.descriptioncin .descrCard .namec{
+    .dropdownmenu2[active=true]~.descriptioncin .descrCard .namec{
         font-size: 4vw;
         height:fit-content;
     }
@@ -283,6 +311,11 @@
 }
 
 @media(max-width: 500px){
+    .cinema .name{
+        min-height: 20px;
+        padding: 0;
+    }
+
     .slider{
         max-width:300px;
         height:190px;
@@ -297,55 +330,97 @@
     .recs{
         flex-flow:column wrap;
     }
-    .container_slider_css{width:80vw}
-    .name[active=true]~.descriptioncin{
+
+    .container_slider_css{
+        width:90vw;
+        height:60vw;
+        margin:2vw 0 3vw 0 ;
+    }
+
+    .container_slider_css .photo{
+        width:90vw;
+        height: 60vw;
+        background-size: 90vw 60vw;
+
+    }
+
+    .recs .recsslide .recsCard:nth-child(4),
+        .recs .recsslide .recsCard:nth-child(5),
+            .recs .recsslide .recsCard:nth-child(6),
+                .recs .recsslide .recsCard:nth-child(7),
+                    .recs .recsslide .recsCard:nth-child(8){
+        display:none;
+    }
+
+    .dropdownmenu{
+        display:flex;
+        width:90vw;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw;
+        background-color: #353149;
+        border-radius: 10px;
+    }
+    .dropdownmenu .text2{
+        display: none;
+    }
+    .dropdownmenu[active=true] .text1{
+        display: none;
+    }
+    .dropdownmenu[active=true] .text2{
+        display: flex;
+    }
+
+    .dropdownmenu2{
+        width:90vw;
+        padding: 3vw;
+    }
+    .recsslide{
+        row-gap: 3vw;
+    }
+
+
+    .dropdownmenu[active=true]~ .recsCard:nth-child(4),
+        .dropdownmenu[active=true]~.recsCard:nth-child(5),
+            .dropdownmenu[active=true]~.recsCard:nth-child(6),
+                .dropdownmenu[active=true]~.recsCard:nth-child(7),
+                    .dropdownmenu[active=true]~.recsCard:nth-child(8){
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content: center;
+        align-items: center;
+        height:20vw;
+        width:70vw;
+    }
+
+
+    .dropdownmenu2[active=true]~ .descriptioncin:nth-last-child(4),
+        .dropdownmenu2[active=true]~.descriptioncin:nth-last-child(3),
+            .dropdownmenu2[active=true]~.descriptioncin:nth-last-child(2),
+                .dropdownmenu2[active=true]~.descriptioncin:nth-last-child(1){
+        display:flex;
         flex-flow:column wrap;
         padding:2vw;
         row-gap: 3vw;
     }
-    .name[active=true]~.descriptioncin:nth-last-child(n) .pictd{
+    .dropdownmenu2[active=true]~.descriptioncin:nth-last-child(n) .pictd{
         background-size: 70vw 50vw;
         height:50vw;
         width:70vw;
     }
-
-    .name[active=true]~.descriptioncin .descrCard{
+    .dropdownmenu2[active=true]~.descriptioncin .descrCard{
         width:80vw;
         row-gap:3vw;
     }
-
-    .name[active=true]~.descriptioncin .descrCard .marks{
-       display:none;
-    }
-    .name[active=true]~.descriptioncin .descrCard .descr{
+    .dropdownmenu2[active=true]~.descriptioncin .descrCard .marks{
         display:none;
     }
-    .name[active=true]~.descriptioncin .descrCard .namec{
+    .dropdownmenu2[active=true]~.descriptioncin .descrCard .descr{
+        display:none;
+    }
+    .dropdownmenu2[active=true]~.descriptioncin .descrCard .namec{
         font-size: 6vw;
         height:fit-content;
-    }
-    .submenu2{
-        display: flex;
-        width:60vw;
-        height:fit-content;
-        flex-flow:row wrap;
-        justify-content: center;
-        align-items:center;
-        padding:3vw;
-        background-color: #292536;
-        border-radius: 10px;
-
-    }
-    .name[active=true]~.descriptioncin .descrCard .submenu2[active=true] ~ .descr{
-        width:75vw;
-        padding: 2vw;
-        font-size: 5vw;
-        display: flex;
-    }
-    .name[active=true]~.descriptioncin .descrCard .submenu2[active=true]~ .marks {
-        font-size: 6vw;
-        height:fit-content;
-        display: flex;
     }
 
 }
