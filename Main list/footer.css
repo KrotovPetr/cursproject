@@ -18,6 +18,7 @@ li{
     flex: 1 1 auto;
     font-family: 'Comfortaa', cursive;
     color:#FFFFFF;
+    font-size: 18px;
 }
 .About_us{
     flex: 7 7 auto;
@@ -25,6 +26,7 @@ li{
     color:#FFFFFF;
     justify-self: flex-start;
     align-items: flex-start;
+    font-size: 18px;
 }
 .support{
     flex: 7 7 auto;
