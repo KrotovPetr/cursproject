@@ -10,7 +10,7 @@
     color:#FFFFFF;
 }
 
-.recs, .news{
+.recs{
     display:flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -24,13 +24,13 @@
 
 
 
-.recs .name, .cinema .name, .news .name{
+.recs .name, .cinema .name{
     display:flex;
     justify-content: flex-start;
     align-items: center;
     width:fit-content;
     height: fit-content;
-    font-size: 24px;
+    font-size: 20px;
 
 }
 
@@ -40,7 +40,7 @@
     text-decoration: underline;
 }
 
-.recs .recsslide, .news .newsSlide{
+.recs .recsslide{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -48,17 +48,6 @@
     flex-flow: row wrap;
 }
 
-
-.newsCard .newsCardback{
-    width:30vw;
-    height:20vw;
-    background-color: #FFFFFF;
-    margin: 1vw;
-    border-radius: 10px;
-    min-width: 150px;
-    min-height: 150px;
-    background-repeat: no-repeat;
-}
 
 .recsCard{
     display:flex;
@@ -76,41 +65,21 @@
 
 }
 
-.newsCard{
-    display:flex;
-    flex-flow:column nowrap;
-    justify-content: center;
-    align-items: center;
-    height:20vw;
-    width:30vw;
-    background-color: #FFFFFF;
-    margin: 1vw;
-    border-radius: 10px;
-    min-width: 150px;
-    min-height: 150px;
-    background-repeat: no-repeat;
 
-}
-
-.recscardName, .newscardName{
+.recscardName{
     font-size: 25px;
     position:absolute;
 
 }
 
-
-.newsCard{
-    align-self: flex-end;
-    justify-self: flex-end;
-}
-
-.recsback, .newsCardback{
+.recsback{
     position:absolute;
+    height:20vw;
+    width:20vw;
 }
 
-.recsback:hover, .newsCardback:hover{
+.recsback:hover{
    filter:blur(3px);
-
 }
 
 .recs .recsslide .recsCard:nth-child(1) .recsback{
@@ -138,31 +107,136 @@
     background:linear-gradient(to bottom right, #8dd973, #d9cb73);
 }
 
+.news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+.news .name{
+    align-self: flex-start;
+    width:fit-content;
+    height: fit-content;
+    font-size: 20px;
 
-.news .newsSlide .newsCard:nth-child(1) .newsCardback {
+}
+
+.newsSlide{
+    display:grid;
+    width: 95vw;
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(2, 20vw);
+    margin: 2vw;
+    gap:2vw;
+    border:10px;
+}
+
+.newsback{
+    width:18vw;
+    height:16vw;
+    border-radius: 20px;
+
+}
+
+.newscardName{
+    height:fit-content;
+    width:fit-content;
+    margin:1vw;
+    font-size: 18px;
+    padding:0 1vw 0 1vw;
+    background-color: #292536;
+    border-radius: 10px;
+}
+
+.newsCard:hover{
+    transform: scale(1.05);
+    transition:1s;
+}
+
+.news .newsSlide .newsCard:nth-child(1n){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: #353149;
+    border-radius: 20px;
+}
+
+
+
+.news .newsSlide .newsCard:nth-child(1) .newsback{
     background:url("https://pitaniemalysha.ru/wp-content/uploads/2020/07/4.jpeg");
     background-size: cover;
-
+    background-position: center;
 }
-.news .newsSlide .newsCard:nth-child(2) .newsCardback{
+
+.news .newsSlide .newsCard:nth-child(2) .newsback{
     background:url("https://www.kleo.ru/img/news/R6rZ2.jpg");
     background-size: cover;
+    background-position: center;
 }
-.news .newsSlide .newsCard:nth-child(3) .newsCardback{
+.news .newsSlide .newsCard:nth-child(3) .newsback{
     background:url("http://almode.ru/uploads/posts/2021-03/1617129614_13-p-silvestr-stallone-14.jpg");
     background-size: cover;
+    background-position: center;
 }
-.news .newsSlide .newsCard:nth-child(4) .newsCardback {
+.news .newsSlide .newsCard:nth-child(4) .newsback{
     background:url("http://almode.ru/uploads/posts/2021-04/1618121607_12-p-zhan-reno-12.jpg");
     background-size: cover;
+    background-position: center;
 }
-.news .newsSlide .newsCard:nth-child(5) .newsCardback{
+.news .newsSlide .newsCard:nth-child(5) .newsback{
     background:url("https://pbs.twimg.com/media/DXf2pCSXUAAVpMe.jpg");
     background-size: cover;
+    background-position: center;
 }
-.news .newsSlide .newsCard:nth-child(6) .newsCardback{
+.news .newsSlide .newsCard:nth-child(6) .newsback{
     background:url("https://sun1-29.userapi.com/c850420/v850420874/1acb6c/jsi83VikyT0.jpg");
     background-size: cover;
+    background-position: center;
+}
+
+.news .newsSlide .newsCard:nth-child(1){
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.news .newsSlide .newsCard:nth-child(2){
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+}
+.news .newsSlide .newsCard:nth-child(3){
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+}
+.news .newsSlide .newsCard:nth-child(4) {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 3;
+
+}
+.news .newsSlide .newsCard:nth-child(5) {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 2;
+
+}
+.news .newsSlide .newsCard:nth-child(6){
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+
 }
 
 
