@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    flex-flow:row nowrap;
+}
+
+/*body .field{*/
+/*    width:15vw;*/
+/*    height:100vh;*/
+/*    background-color: #353149;*/
+
+/*}*/
+
+body .formfield{
+    width:99vw;
+    height:100vh;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body .formfield .form{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    width:70vw;
+    height:70vh;
+    row-gap: 2vw;
+}
+
+.form .photo{
+    width:10vw;
+    height:10vw;
+    background:url("../Enterphoto.png");
+    background-position: center;
+    background-size: 10vw;
+    border-radius: 50%;
+    border:3px solid #353149;
+
+}
+.form .fields{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    width:70vw;
+    height:50vh;
+    border-radius: 20px;
+    background: #ffffff;
+    border:3px solid #353149;
+    row-gap:2vw;
+}
+.form .fields .emailField input, .form .fields .passwordField input{
+    width:40vw;
+    height:30px;
+    border-radius:10px;
+    font-family: 'Comfortaa', cursive;
+    font-size:16px;
+    padding:5px;
+    margin: 10px 0 0 0;
+}
+
+.form .fields .emailField .emailname, .form .fields .passwordField .passwordname{
+    font-family: 'Comfortaa', cursive;
+    font-size:20px;
+    padding: 0 0 0 15px;
+    color: #8d8b9a;
+}
+
+.form .entbutton{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    width:200px;
+    height:50px;
+    font-family: 'Comfortaa', cursive;
+    font-size:20px;
+    background: #d9486f;
+    border:3px solid #d9486f;
+    color:#FFFFFF;
+    border-radius: 30px;
+}
+.form .entbutton:hover, .form .entbutton:active{
+    background: #ffffff;
+    color: #d9486f;
+    border:3px solid #d9486f;
+    transition:0.5s;
+}
+
+.form .entbutton:active{
+    transform: translate(2px, 2px);
+}
