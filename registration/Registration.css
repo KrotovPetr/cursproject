@@ -9,15 +9,15 @@ body{
     flex-flow:row nowrap;
 }
 
-/*body .field{*/
-/*    width:15vw;*/
-/*    height:100vh;*/
-/*    background-color: #353149;*/
+body .field{
+    width:7vw;
+    height:100vh;
+    background-color: #353149;
 
-/*}*/
+}
 
 body .formfield{
-    width:99vw;
+    width:92vw;
     height:100vh;
     display:flex;
     flex-flow:column nowrap;
@@ -35,6 +35,7 @@ body .formfield .form{
     row-gap: 2vw;
 }
 
+
 .form .photo{
     width:10vw;
     height:10vw;
@@ -48,15 +49,17 @@ body .formfield .form{
 .form .fields{
     display:flex;
     flex-flow:column nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width:70vw;
     height:50vh;
     border-radius: 20px;
     background: #ffffff;
     border:3px solid #353149;
-    row-gap:2vw;
+    row-gap:0.5vw;
+
 }
+
 .form .fields .emailField input, .form .fields .passwordField input{
     width:40vw;
     height:30px;
@@ -74,6 +77,23 @@ body .formfield .form{
     color: #8d8b9a;
 }
 
+.reg2{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap:10px;
+}
+
+.reg2 .creac, .reg2 .fpass{
+    font-family: 'Comfortaa', cursive;
+    font-size:16px;
+    width:40vw;
+    color:#8d8b9a;
+    padding: 0 0 0 15px;
+}
+
+
 .form .entbutton{
     display:flex;
     flex-flow:column nowrap;
@@ -88,6 +108,7 @@ body .formfield .form{
     color:#FFFFFF;
     border-radius: 30px;
 }
+
 .form .entbutton:hover, .form .entbutton:active{
     background: #ffffff;
     color: #d9486f;
@@ -97,4 +118,59 @@ body .formfield .form{
 
 .form .entbutton:active{
     transform: translate(2px, 2px);
+}
+
+.field{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left-arrow {
+    display:flex;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-top: 6px solid #ffffff;
+    border-left: 6px solid #ffffff;
+    transition:1s;
+
+}
+
+.backarrow{
+    display:flex;
+    width:4vw;
+    height:4vw;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    transform: rotate(-45deg);
+    margin:3vw 0 0 0;
+    transition:1s;
+}
+
+.backarrow:hover{
+    background: #FFFFFF;
+    transition:1s;
+    transition-delay: 0.15s;
+}
+
+.left-arrow:hover{
+    border-top: 6px solid #353149;
+    border-left: 6px solid #353149;
+    transition:1s;
+    transition-delay: 0.15s;
+    cursor:pointer;
+}
+
+.formfields{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    row-gap: 1vw;
+    margin:2vw 0 0 0;
+
 }
