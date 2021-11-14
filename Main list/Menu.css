@@ -58,7 +58,6 @@
 }
 
 
-
 .logo{
     justify-self: flex-start;
 }
@@ -67,8 +66,6 @@
     border-radius: 30px;
 
 }
-
-
 
 
 
@@ -113,16 +110,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
-.about:hover, .services:hover{
-    text-decoration: underline;
+.about, .services, .contacts span{
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+.about:hover, .services:hover, .contacts span:hover{
     transform: translateX(-2px);
     transform: translateY(2px);
+    text-decoration-color: rgba(255, 255, 255, 1);
 }
+
 .contacts span{
     color: #696565;
-}
-.contacts span:hover{
-    text-decoration: underline;
-    color:#F2F2F2;
 }

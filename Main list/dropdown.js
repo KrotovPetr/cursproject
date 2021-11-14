@@ -17,9 +17,8 @@ function myFunction3(e,id){
 }
 
 
-function myFunction4(у){
+function myFunction4(e){
     let cards=document.getElementsByClassName("newsCard");
-
     cards[0].addEventListener("mouseover", function(event){
         cards[1].style.filter="blur(5px)";
         cards[2].style.filter="blur(5px)";
