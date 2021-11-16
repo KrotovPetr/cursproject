@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto:wght@400;700&display=swap');
+a.text:active,
+a.text:hover,
+a.text {
+    text-decoration: none;
+}
+
 .mainp{
     padding:3px;
     display: flex;
@@ -76,6 +82,9 @@
     position:absolute;
     height:20vw;
     width:20vw;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 10px;
 }
 
 .recsback:hover{
@@ -461,10 +470,10 @@
 @media(max-width: 500px){
 
     .cinema{
-        width:99vw;
+        width:96vw;
 
     }
-    .cinema .name, .recs .name{
+    .cinema .name, .recs .name, .news .name{
         padding:1vw 0 2vw 1vw;
         font-size: 16px;
     }
@@ -516,8 +525,8 @@
     }
 
     .dropdownmenu2{
-        width:90vw;
-        padding: 3vw;
+        width:fit-content;
+        padding: 3vw 4vw 3vw 4vw;
     }
     .recsslide{
         row-gap: 3vw;
@@ -525,7 +534,7 @@
 
     .recs .name[active=true]~ .recsslide{
         display:flex;
-
+        transition: 1s;
     }
 
     .dropdownmenu2[active=true]~ .descriptioncin:nth-last-child(n){
@@ -554,6 +563,10 @@
         height:fit-content;
     }
 
+    .news{
+        width:96vw;
+    }
+
     .newsCard .newsback{
         display:none;
     }
@@ -566,6 +579,7 @@
         margin: 2vw;
         gap:2vw;
         border:10px;
+        margin:0;
     }
 
     .news .newsSlide .newsCard:nth-child(1){

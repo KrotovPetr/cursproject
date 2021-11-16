@@ -3,6 +3,10 @@
     margin:0;
     padding:0;
 }
+a:hover, a:active, a{
+    text-decoration:none;
+    color:#8d8b9a;
+}
 
 body{
     display:flex;
@@ -37,7 +41,7 @@ body .formfield .form{
     justify-content: center;
     align-items: center;
     width:70vw;
-    height:70vh;
+    height:80vh;
     row-gap: 2vw;
 }
 
@@ -58,7 +62,7 @@ body .formfield .form{
     justify-content: space-around;
     align-items: center;
     width:70vw;
-    height:50vh;
+    height:75vh;
     border-radius: 20px;
     background: #ffffff;
     border:3px solid #353149;

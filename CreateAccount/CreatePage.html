@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мир кино</title>
-    <link rel="stylesheet" type="text/css" href="/cursproject/registration/Registration.css"/>
-    <script src="/cursproject/registration/functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="/cursproject/CreateAccount/CreatePage.css"/>
+    <script src="functions.js"></script>
 </head>
 <body>
 <div class="field">
@@ -17,25 +17,32 @@
 </div>
 <div class="formfield">
     <div class="form">
-            <div class="photo"></div>
+        <div class="photo"></div>
         <div class="fields">
             <div class="formfields">
                 <div class="emailField">
                     <div class="emailname">Email</div>
                     <input type="email" class="email" id="email">
                 </div>
+                <div class="emailField">
+                    <div class="emailname">Login</div>
+                    <input type="email" class="email" id="login">
+                </div>
                 <div class="passwordField">
                     <div class="passwordname">Password</div>
                     <input type="password" class="password" id="password">
                 </div>
-            </div>
-                <div class="reg2">
-                    <div class="fpass" ><a>Forgot password?</a></div>
-                    <div class="creac"><a>Create account!</a></div>
+                <div class="passwordField">
+                    <div class="passwordname">Repeat password</div>
+                    <input type="password" class="password" id="passwordrep">
                 </div>
+            </div>
+            <div class="reg2">
+                <div class="fpass" ><a href="/registration/Registration.html">Already have an account?</a></div>
+            </div>
 
 
-            <div class="entbutton" id="endbutton" onclick="getData(this)">Sign in</div>
+            <div class="entbutton" id="endbutton" onclick="getData(this)">Create</div>
         </div>
     </div>
 </div>
