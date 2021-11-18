@@ -10,7 +10,7 @@
 
 @media (min-device-width: 500px), (min-width: 500px){
 .header{
-    width: 100%;
+
     min-height:100px;
     flex-flow: row wrap;
 }
@@ -28,6 +28,7 @@
     background-color: #0D0000;
     border-radius: 0px 0px 10px 10px;
     color: #F2F2F2;
+    width: 100%;
 }
 .header1{
     display:flex;

@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Roboto:wght@400;700&display=swap');
+*{
+    margin:0;
+}
+body{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #100E19;
+    min-width:350px;
+}
+.mainp{
+    height:fit-content;
+    min-height: 300px;
+    width:96vw;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin:2vw 0 2vw 0;
+}
+.mainp .infoabout {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width:94vw;
+    height: fit-content;
+    column-gap: 2vw;
+}
+
+.mainp .infoabout .photo{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width:20vw;
+    height:27vw;
+    background: url("https://i.pinimg.com/736x/dd/7b/66/dd7b66b6827a77327c5284433cc9e46b--gary-oldman-photoshoot.jpg") no-repeat center;
+    background-size: 20vw 27vw;
+    border-radius: 10px;
+
+}
+
+.mainp .infoabout .biography{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width:70vw;
+    height:27vw;
+    color:white;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    background: #353149;
+    border-radius: 10px;
+
+
+}
+
+.mainp .infoabout .biography .name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex:1 1 auto;
+    font-size:24px;
+}
+
+.mainp .infoabout .biography .story{
+    display:flex;
+    font-size:16px;
+    justify-content: center;
+    align-items: center;
+    flex:4 4 auto;
+
+    background: #292536;
+    border-radius: 10px;
+    margin:0 1vw 1vw 1vw;
+    padding:1vw;
+}
+
+.mainp .infoabout .biography .button1{
+    display:flex;
+    font-size:20px;
+    justify-content: center;
+    align-items: center;
+    flex:1 1 auto;
+    margin: 0 0 2vw 0;
+    width:200px;
+    height:40px;
+    border-radius: 30px;
+
+}
+
+.mainp .infoabout .biography .button1:not(hover){
+    border:4px solid #bd1141;
+    background: #bd1141;
+    color:#FFFFFF;
+    transition:0.5s;
+}
+
+.mainp .infoabout .biography .button1:hover{
+    border:4px solid #bd1141;
+    background: #ffffff;
+    color: #bd1141;
+    transition:0.5s;
+}
+
+a, a:hover, a:active, a:visited{
+    text-decoration: none;
+
+}
+
+.gallery{
+    display:grid;
+    width: 90vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap:1.25vw;
+    margin: 2vw 0 2vw 0;
+    padding:1vw;
+    border:1px solid white;
+}
+
+.gallery .filmscard:nth-child(1*n){
+
+}
+
+.gallery .filmscard:nth-child(1){
+    background: url("https://avatars.mds.yandex.net/get-zen_doc/1705212/pub_5f4bf685aec899427d78085b_5f4bf72a84a7f014bd23fbbd/scale_1200") no-repeat  center ;
+    background-size: cover;
+    border:1px solid white;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.gallery .filmscard:nth-child(2){
+
+
+}
+.gallery .filmscard:nth-child(3){
+
+
+}
+.gallery .filmscard:nth-child(4){
+
+
+}
+.gallery .filmscard:nth-child(5){
+
+}
+.gallery .filmscard:nth-child(6){
+
+
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    width: 90vw;
+    height:fit-content;
+    border-radius: 10px;
+}
+
+.photos{
+    width: 400%;
+    height: 70vh;
+    animation: slide 20s infinite;
+}
+
+.photo {
+    float: left;
+    width:90vw;
+    height:70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    width: 90vw;
+    height: 70vh;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.text {
+    top:50vh;
+    width: 40vw;
+    height: 20vh;
+    float: left;
+    position: relative;
+    animation: text 20s infinite;
+    background: #bd1141;
+    opacity:0.8;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 0 0;
+}
+
+.text .namet {
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    font-size: 24px;
+    color: #fff;
+    flex:1 1 auto;
+    background: #353149;
+    width:fit-content;
+    border-radius:20px;
+    margin:1vh;
+    padding:3px 10px 3px 10px;
+}
+
+.text .subtext{
+    opacity:1;
+    border-radius:20px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+    flex:2 2 auto;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.content:nth-child(n){
+    width: 90vw;
+    height: 70vh;
+    background-size: 90vw 70vh;
+}
+
+.photo:nth-child(1) .content{
+    background: url("https://avatars.mds.yandex.net/i?id=6dc401f6928bbc2e9425df1553ef2171-3193980-images-thumbs&n=13") center no-repeat;
+    background-size: cover;
+}
+
+.photo:nth-child(2) .content{
+    background: url("https://i.pinimg.com/originals/27/99/19/279919c920fdbb15d66588d5cd0626d1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.photo:nth-child(3) .content{
+    background: url("https://n1s1.hsmedia.ru/80/0e/06/800e06752211ac162cf0720a69180e31/1600x800_0xac120003_15330724661597318180.jpeg") no-repeat center;
+    background-size: cover;
+}
+
+.photo:nth-child(4) .content{
+    background: url("https://comicvine1.cbsistatic.com/uploads/original/11123/111237235/4651248-4471205-4309852-gary-oldman-the-dark-knight.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+@keyframes slide {
+
+    0%,10%,20%{margin: 0;}
+    25%,30%,40%{    margin-left:-100% }
+    50%,60%,70%{    margin-left:-200%  }
+    75%,80%,90%{    margin-left:-300% }
+    100%{   margin:0; }
+
+}
+
+@keyframes text {
+    0%{top:70vh}
+    5%,30%,55%,80%{top:50vh}
+    10%,35%,60%,85%{top:50vh}
+    15%,40%,65%,90%{top:50vh}
+    20%,45%,70%,95%{top:69vh}
+    24%,49%,74%,99%{top:70vh}
+
+
+
+}
+
+
+@media(min-width: 900px) and (max-width: 1150px){
+
+    .mainp .infoabout .biography .story{
+        font-size:20px;
+        background: #292536;
+    }
+    .mainp .infoabout .biography .button1{
+        display:none;
+    }
+    .mainp .infoabout {
+        flex-flow:column wrap;
+        width:96vw;
+        row-gap: 3vw;
+        background: #292536;
+        padding: 2vw 0 2vw 0;
+        border-radius: 10px;
+    }
+    .mainp .infoabout .biography{
+        height:fit-content;
+        width:96vw;
+    }
+
+    .photo:nth-child(1) .content{
+        background: url("https://i.pinimg.com/originals/4b/07/0b/4b070bc034a6dd3c635e82c7182a6cb2.png") center no-repeat;
+        background-size: cover;
+    }
+}
+@media  (max-width: 900px){
+    .mainp .infoabout {
+        flex-flow:column wrap;
+        row-gap: 2vw;
+        background: #353149;
+        border-radius: 10px;
+        padding:2vw;
+        width:90vw;
+    }
+
+    .mainp .infoabout .photo{
+        width:30vw;
+        height:40vw;
+        background-size: 30vw 40vw;
+    }
+
+    .mainp .infoabout .biography{
+        height:fit-content;
+        background: #292536;
+        width:90vw;
+    }
+
+    .mainp .infoabout .biography .story{
+        font-size:14px;
+    }
+
+    .mainp .infoabout .biography .button1{
+        width:150px;
+        height:30px;
+        font-size: 16px;
+        margin: 3vw 0 1vw 0;
+    }
+
+    .slider{
+        width: 90vw;
+        height: 70vh;
+    }
+
+    .photos{
+        height: 70vh;
+    }
+
+    .photo {
+        width:90vw;
+        height: 70vh;
+    }
+
+    .content {
+        width: 90vw;
+        height: 70vh;
+    }
+
+
+    .text {
+        top:45vh;
+        width: 60vw;
+        height: 20vh;
+
+    }
+
+    .content:nth-child(n){
+        width: 90vw;
+        height: 70vh;
+        background-size: 90vw 70vh;
+        background-position: center;
+    }
+
+    .photo:nth-child(1) .content{
+        background: url("https://i.pinimg.com/originals/4b/07/0b/4b070bc034a6dd3c635e82c7182a6cb2.png") center no-repeat;
+    }
+    .photo:nth-child(4) .content{
+        background: url("http://serialgotham.ru/photo/1-0/118_james_gord.jpg") center no-repeat;
+    }
+
+}
