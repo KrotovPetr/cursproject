@@ -10,7 +10,6 @@
 
 @media (min-device-width: 500px), (min-width: 500px){
 .header{
-
     min-height:100px;
     flex-flow: row wrap;
 }

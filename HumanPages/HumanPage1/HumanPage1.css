@@ -118,46 +118,74 @@ a, a:hover, a:active, a:visited{
     height: 60vh;
     justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap:1.25vw;
     margin: 2vw 0 2vw 0;
     padding:1vw;
-    border:1px solid white;
+    background: #353149;
+    border-radius: 10px;
 }
 
-.gallery .filmscard:nth-child(1*n){
-
+.gallery .filmscard:nth-child(n){
+    border-radius: 10px;
+    transition:1s;
 }
+
+.gallery .filmscard:nth-child(n)[active=true]{
+    transition:1s;
+}
+
 
 .gallery .filmscard:nth-child(1){
-    background: url("https://avatars.mds.yandex.net/get-zen_doc/1705212/pub_5f4bf685aec899427d78085b_5f4bf72a84a7f014bd23fbbd/scale_1200") no-repeat  center ;
+    background: url("https://s0.rbk.ru/v6_top_pics/resized/1440xH/media/img/5/51/755216293073515.png") no-repeat  center ;
     background-size: cover;
-    border:1px solid white;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 2;
+    height: 27vh;
+
 }
 
 .gallery .filmscard:nth-child(2){
-
+    background: url("https://i.pinimg.com/originals/5f/75/04/5f75046964077a542c4945e0ccb8eaa1.jpg") no-repeat  center ;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 55vh;
 
 }
 .gallery .filmscard:nth-child(3){
-
+    background: url("https://media.gq.com/photos/5a66109425b0e20e53c2e5fa/16:9/w_2560%2Cc_limit/garyoldman.jpg") no-repeat  center ;
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 27vh;
 
 }
 .gallery .filmscard:nth-child(4){
-
+    background: url("https://www.kinogallery.com/img/wallpaper/kinogallery-wallpaper-1600x1200-14164.jpg") no-repeat  center ;
+    background-size: cover;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 27vh;
 
 }
 .gallery .filmscard:nth-child(5){
-
-}
-.gallery .filmscard:nth-child(6){
-
-
+    background: url("https://wallpapershome.com/images/pages/pic_h/3309.jpg") no-repeat  center ;
+    background-size: cover;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    height: 27vh;
 }
 
 .slider{
@@ -168,11 +196,15 @@ a, a:hover, a:active, a:visited{
     border-radius: 10px;
 }
 
+
+
 .photos{
     width: 400%;
     height: 70vh;
     animation: slide 20s infinite;
+
 }
+
 
 .photo {
     float: left;
@@ -204,6 +236,7 @@ a, a:hover, a:active, a:visited{
     justify-content: center;
     align-items: center;
     border-radius: 0 20px 0 0;
+
 }
 
 .text .namet {
@@ -265,6 +298,79 @@ a, a:hover, a:active, a:visited{
 }
 
 
+.mainp .awards{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width:96vw;
+    height:fit-content;
+    border:1px solid #FFFFFF;
+    margin:2vw 0 2vw 0;
+    row-gap: 2vw;
+
+}
+
+.mainp .awards .label{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Comfortaa', cursive;
+    color:#FFFFFF;
+    height:5vh;
+    width: 20vw;
+    border-radius: 20px;
+    background: #353149;
+}
+
+.mainp .awards .slides{
+    height:fit-content;
+    min-height: 25vh;
+    width: 85vw;
+    border-radius: 20px;
+    background: #353149;
+}
+
+.mainaw{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 5vw;
+}
+
+.mainp .awards .mainaw .selector{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    height:fit-content;
+    min-height: 25vh;
+    border-radius: 20px;
+    row-gap: 2vh;
+    width: 5vw;
+    background: #353149;
+}
+
+.mainp .awards .mainaw .selector:nth-child(n) input[type=radio]{
+    display: none;
+}
+
+.label1, .label2, .label3{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #100E19;
+}
+
+.selector:nth-child(n) input[type=radio]:checked{
+    background: #81143c;
+}
+
+
 @keyframes slide {
 
     0%,10%,20%{margin: 0;}
@@ -314,8 +420,19 @@ a, a:hover, a:active, a:visited{
         background: url("https://i.pinimg.com/originals/4b/07/0b/4b070bc034a6dd3c635e82c7182a6cb2.png") center no-repeat;
         background-size: cover;
     }
+
+    .gallery{
+        display:none;
+    }
+
+
 }
 @media  (max-width: 900px){
+
+    .gallery{
+        display:none;
+    }
+
     .mainp .infoabout {
         flex-flow:column wrap;
         row-gap: 2vw;
@@ -388,5 +505,7 @@ a, a:hover, a:active, a:visited{
     .photo:nth-child(4) .content{
         background: url("http://serialgotham.ru/photo/1-0/118_james_gord.jpg") center no-repeat;
     }
+
+
 
 }
