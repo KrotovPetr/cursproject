@@ -14,9 +14,13 @@ body{
     justify-content: center;
     align-items:center;
     flex-flow: row nowrap;
-    width:10vw;
-    height:100vh;
+    width:6vw;
+    height: 100vh;
     background: #100E19;
+}
+
+.decfield .text{
+    display: none;
 }
 
 .formfield{
@@ -49,18 +53,17 @@ body{
     font-size: 30px;
     font-weight: 200;
     margin: 2vw 0 0 2vw;
-    padding: 0 0 0 10px;
 }
 
 .form-description, .form-questions {
     width: fit-content;
     height: fit-content;
-    margin: 2vw 0 0 2vw;
+    margin: 1.25vw 0 0 2vw;
 }
 
 .form-description .header, .form-questions .header{
     font-size: 20px;
-    padding: 0 0 15px 10px;
+    padding: 0 0 15px 0;
 
 }
 
@@ -69,7 +72,9 @@ body{
 
 }
 
-.form-description .field input[type=text]{
+.form-description .field textarea{
+    resize: none;
+    padding: 10px;
     width:80vw;
     height:20vh;
     font-size: 18px;
@@ -91,14 +96,14 @@ body{
 .form-description .form-button:not(hover){
     background: #a91c52;
     color:#FFFFFF;
-    border: 4px solid #a91c52;
+    border: 3px solid #a91c52;
     transition:0.5s;
 }
 
 .form-description .form-button:hover{
     background: #ffffff;
     color: #a91c52;
-    border: 4px solid #a91c52;
+    border: 3px solid #a91c52;
     transition:0.5s;
     cursor:pointer;
 }
@@ -156,14 +161,153 @@ body{
 .form-button:not(hover){
     background: #a91c52;
     color:#FFFFFF;
-    border: 4px solid #a91c52;
+    border: 3px solid #a91c52;
     transition:0.5s;
 }
 
 .form-button:hover{
     background: #ffffff;
     color: #a91c52;
-    border: 4px solid #a91c52;
+    border: 3px solid #a91c52;
     transition:0.5s;
     cursor:pointer;
+}
+
+@media(max-width:1100px){
+    .decfield{
+        display:flex;
+        place-content: center;
+        width:100%;
+        height:7vh;
+        font-family: 'Comfortaa' ,cursive;
+
+    }
+
+    .decfield .text{
+        display: flex;
+        color:white;
+        padding:10px 0 15px 15px;
+        font-size: 36px;
+    }
+
+    .form-questions .questions .question{
+        width:90vw;
+        padding:3px;
+        height:fit-content;
+    }
+
+    .form-questions .questions .question .text{
+        font-size: 26px;
+        padding: 10px;
+    }
+
+    .form-questions .questions{
+        row-gap: 3vw;
+    }
+
+    body{
+        flex-flow:column wrap;
+    }
+
+    .formfield{
+        width:100%;
+
+    }
+
+    .form{
+        height:fit-content;
+    }
+
+    .buttons{
+        margin: 0 0 2vw 0;
+    }
+
+    .form-description .header, .form-questions .header{
+        font-size: 26px;
+    }
+
+    .form-button, .form-description .form-button{
+        width:300px;
+        height:60px;
+        font-size: 24px;
+    }
+    .form-description .field textarea{
+        width:90vw;
+    }
+}
+
+
+@media (max-width:650px) and (min-width:500px){
+
+    .decfield{
+        display:flex;
+        place-content: center;
+        width:100%;
+        height:7vh;
+        font-family: 'Comfortaa' ,cursive;
+
+    }
+
+    .decfield .text{
+        display: flex;
+        color:white;
+        padding:10px 0 15px 15px;
+        font-size: 30px;
+    }
+
+    .form-questions .questions .question{
+        width:90vw;
+        height:fit-content;
+    }
+
+    .form-questions .questions .question .text{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .form-questions .questions{
+        row-gap: 5vw;
+    }
+
+    body{
+        flex-flow:column wrap;
+    }
+
+    .formfield{
+        width:100%;
+
+    }
+
+    .form{
+        height:fit-content;
+    }
+
+    .buttons{
+        margin: 0 0 2vw 0;
+    }
+    .form-description .field textarea{
+        width:90vw;
+    }
+}
+
+@media (max-width:500px){
+    .form-button, .form-description .form-button{
+        width:180px;
+        height:50px;
+        font-size: 20px;
+    }
+
+    .form-questions .questions .question .text{
+        font-size: 18px;
+    }
+    .form-description .header, .form-questions .header{
+        font-size: 20px;
+    }
+
+    .form-header{
+        font-size: 24px;
+    }
+    .form-description .field textarea{
+        width:86vw;
+    }
 }
