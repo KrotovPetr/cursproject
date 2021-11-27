@@ -25,7 +25,7 @@ function getData(e){
           if(emailData===emailsArr[i]){
               if(passData===passArr[i]){
                   flag=true;
-                  document.location.href = "/MainlPage/Main.html";
+                  document.location.href = "PAP.html";
               }
               else{
                   alert("Неверный пароль");

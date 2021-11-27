@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background: #100E19;
+    row-gap: 3vw;
+    font-family: 'Comfortaa', cursive;
+}
+
+.main-part{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    width:98vw;
+    height:fit-content;
+    row-gap: 2vw;
+}
+
+.userInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 98vw;
+    color:#FFFFFF;
+    height: fit-content;
+
+}
+
+.userInfo .photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    border:3px solid #3e3956;
+    border-radius: 50%;
+    background: url("../userPhoto.png") center;
+    background-size: cover;
+    width:15vw;
+    height:15vw;
+    margin: 0 0 0 1vw;
+}
+
+.userInfo .otherInfo .FIO{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    row-gap: 10px;
+    background: #100E19;
+    padding:2vw;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 0 0 0 2vw;
+
+}
+
+.userInfo .otherInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    margin: 0 0 0 2vw;
+    border:3px solid #353149;
+    border-radius: 10px;
+    background: #353149;
+    height:fit-content;
+    padding: 2vw 0 2vw 0;
+}
+
+.registration-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding:2vw;
+    margin:0 2vw 0 0;
+    row-gap: 10px;
+    background: #100E19;
+    border-radius: 10px;
+}
+
+ .mySub{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    width:98vw;
+    height:fit-content;
+    background: #3e3956;
+    border-radius: 10px;
+}
+
+ .mySub .mySub-header{
+     font-size: 24px;
+     padding:15px;
+     color:#FFFFFF;
+     background: #100E19;
+     margin: 1vw;
+     border-radius: 10px;
+ }
+
+.mySub .mySub-collections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    column-gap: 1vw;
+}
+
+.mySub .mySub-collections .card{
+    width:200px;
+    height:200px;
+    background: #100E19;
+    margin: 1vw;
+    border-radius: 10px;
+}
