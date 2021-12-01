@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 function getRate(e){
     let star = document.getElementsByClassName("like");
     star[0].addEventListener("mouseover",()=>{
@@ -69,7 +69,6 @@ function getRate(e){
 
 
 getRate(this);
-=======
 function getStars(){
     let star = document.getElementById("likes");
     star.addEventListener("mouseover",()=>{
@@ -77,4 +76,3 @@ function getStars(){
     },false);
 
 }
->>>>>>> origin/master
