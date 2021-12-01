@@ -2,6 +2,14 @@
     margin:0;
 }
 
+<<<<<<< HEAD
+=======
+a,a:hover, a:active, a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+>>>>>>> origin/master
 body{
     display:flex;
     justify-content: flex-start;
@@ -9,7 +17,11 @@ body{
     flex-flow: column wrap;
     background: #100E19;
     font-family: 'Comfortaa' , cursive;
+<<<<<<< HEAD
     row-gap: 2vw;
+=======
+    row-gap: 1vw;
+>>>>>>> origin/master
 }
 
 .main-part{
@@ -19,7 +31,10 @@ body{
     justify-content: flex-start;
     align-items: center;
     flex-flow: column wrap;
+<<<<<<< HEAD
     row-gap: 1.5vw;
+=======
+>>>>>>> origin/master
 }
 
 .main-part .head-part{
@@ -43,12 +58,19 @@ body{
 }
 
 .main-part .head-part .description .info{
+<<<<<<< HEAD
     display:flex;
     justify-content: center;
     align-items: center;
     width: 40vw;
     font-size: 16px;
     color:white;
+=======
+    width: 40vw;
+    font-size: 16px;
+    color:white;
+    margin: 0 0 0 1vw;
+>>>>>>> origin/master
     text-align: center;
     background: #3e3956;
     padding:1vw;
@@ -95,20 +117,51 @@ body{
 .photos .gal-elem .background{
     display:flex;
     align-items: center;
+<<<<<<< HEAD
     flex-flow: column nowrap;
 
 }
 
 .photos .gal-elem .background:not(hover){
+=======
+    flex-flow: column wrap;
+
+}
+
+.photos .gal-elem:nth-child(n)  .background:not(hover){
+>>>>>>> origin/master
     justify-content: center;
     width:210px;
     height:210px;
     border-radius: 50%;
     color: #FFFFFF;
     transition: 1s;
+<<<<<<< HEAD
     background:linear-gradient(to top left, #232622, #a91c52);
 }
 
+=======
+}
+
+.photos .gal-elem:nth-child(1) .background:not(hover){
+    background:linear-gradient(to top left, #232622, #a91c52);
+}
+.photos .gal-elem:nth-child(2) .background:not(hover){
+    background:linear-gradient(to top left, #232622, #a91c52);
+}
+.photos .gal-elem:nth-child(3) .background:not(hover){
+    background:linear-gradient(to top left, #232622, #a91c52);
+}
+.photos .gal-elem:nth-child(4) .background:not(hover){
+    background:linear-gradient(to top left, #232622, #a91c52);
+}
+.photos .gal-elem:nth-child(5) .background:not(hover){
+    background:linear-gradient(to top left, #232622, #a91c52);
+}
+.photos .gal-elem:nth-child(6) .background:not(hover){
+    background:linear-gradient(to top left, #232622, #a91c52);
+}
+>>>>>>> origin/master
 
 .photos .gal-elem:nth-child(n)  .background:hover{
     justify-content: flex-start;
@@ -134,7 +187,11 @@ body{
     transition: 1s;
     animation: appear 1s 0.5s forwards;
     padding:5px;
+<<<<<<< HEAD
     margin:1.25vw;
+=======
+    margin:2vw;
+>>>>>>> origin/master
 }
 
 .photos .gal-elem .background:hover .text1{
@@ -161,7 +218,11 @@ body{
     width:200px;
     height:200px;
     border-radius: 50%;
+<<<<<<< HEAD
     z-index: 2;
+=======
+    z-index: 1;
+>>>>>>> origin/master
 }
 
 
@@ -170,7 +231,11 @@ body{
     background-size: cover;
 }
 .photos .gal-elem:nth-child(2) .background .photo{
+<<<<<<< HEAD
     background: url("../Alien.png") center;
+=======
+    background: url("https://www.cap-that.com/alien/01/theatrical/images/alien(1979)theatrical_3721.jpg") center;
+>>>>>>> origin/master
     background-size: cover;
 }
 .photos .gal-elem:nth-child(3) .background .photo{
@@ -239,6 +304,7 @@ body{
     border: 3px solid #3e3956;
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 
 .reports, .photo-gallery{
@@ -542,3 +608,5 @@ body{
 
     }
 }
+=======
+>>>>>>> origin/master

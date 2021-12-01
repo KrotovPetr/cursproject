@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    width: 96vw;
+    width: 98vw;
     color:#FFFFFF;
     height: fit-content;
 
@@ -64,6 +64,7 @@ body {
     flex-flow: row wrap;
     flex: 1 1 auto;
     margin: 0 0 0 2vw;
+    border:3px solid #353149;
     border-radius: 10px;
     background: #353149;
     height:fit-content;
@@ -84,14 +85,13 @@ body {
 
  .mySub{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-flow: column wrap;
-    width:96vw;
+    width:98vw;
     height:fit-content;
     background: #3e3956;
     border-radius: 10px;
-    padding: 0 0 1vw 0;
 }
 
  .mySub .mySub-header{
@@ -105,190 +105,16 @@ body {
 
 .mySub .mySub-collections{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-flow: row wrap;
     column-gap: 1vw;
-
 }
 
-.mySub .mySub-collections .card:not(hover){
-    width:300px;
-    height:250px;
+.mySub .mySub-collections .card{
+    width:200px;
+    height:200px;
     background: #100E19;
     margin: 1vw;
     border-radius: 10px;
-    position: relative;
-    overflow:hidden;
-    transition: all 1s ease-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mySub .mySub-collections .card:hover{
-    transform: scale(1.1);
-    transition: all 1s ease-out;
-}
-
-.mySub .mySub-collections .card:hover .cardback, .mySub .mySub-collections .card:hover .cardtext{
-    transform: translateX(0%);
-
-}
-
-.mySub .mySub-collections .card .cardback:not(hover){
-    width:100%;
-    top: 0;
-    left: 0;
-    position:absolute;
-    height:100%;
-    transition: all 1s ease-out;
-    z-index: 1;
-    transform: translateX(-100%);
-
-}
-
-.mySub .mySub-collections .card:nth-child(n) .cardback:not(hover){
-    background:black;
-    opacity: 0.6;
-    background-size: cover;
-}
-
-.mySub .mySub-collections .card .cardtext{
-    width:100%;
-    top: 0;
-    left: 0;
-    position:absolute;
-    height:100%;
-    color:#FFFFFF;
-    transition: all 1s ease-out;
-    z-index: 1;
-    transform: translateX(-100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-}
-
-.mySub .mySub-collections .card:nth-child(1):not(hover){
-    background:url("https://yt3.ggpht.com/ytc/AKedOLT39pMgQrqXCEzI0j-tuSSMcFwyu3rMBrVeTboO=s900-c-k-c0x00ffffff-no-rj") center;
-}
-
-.mySub .mySub-collections .card:nth-child(2):not(hover){
-    background:url("https://phonoteka.org/uploads/posts/2021-05/1620107063_49-phonoteka_org-p-geneticheskii-fon-55.jpg") center;
-}
-
-.mySub .mySub-collections .card:nth-child(3):not(hover){
-    background:linear-gradient(to bottom, #d9cb73, #10899c) center;
-}
-
-.questions{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-    color:white;
-    width:97vw;
-    border-radius:10px;
-    border:2px solid #3e3956;
-}
-
-.questions .questions-header{
-    margin: 1vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    background: #353149;
-    border-radius: 10px;
-    padding: 0.5vw;
-    font-size: 24px;
-    row-gap: 1vw;
-}
-
-.questions .question{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    border-radius: 10px;
-    width:70vw;
-    padding:1vw;
-    height:fit-content;
-    cursor: pointer;
-    margin:1vw;
-    text-align: center;
-}
-
-.questions .question:nth-child(4){
-    background: #a91c52;
-    max-width: 200px;
-    max-height: 60px;
-}
-
-.questions .question:not(hover){
-    background: #353149;
-    transition: ease-in-out 1s;
-
-}
-
-.questions .question:nth-child(n):hover{
-    background: #ffffff;
-    transition: ease-in-out 1s;
-}
-
-.questions .question:nth-child(n):hover a{
-    color:black;
-    transition: ease-in-out 1s;
-}
-@media (min-width: 200px) and (max-width: 1200px){
-    .main-part{
-        row-gap: 4vw;
-    }
-
-    .userInfo, .userInfo .otherInfo{
-        flex-flow:column wrap;
-        justify-content: center;
-        align-items: center;
-        width:96vw;
-
-    }
-    .userInfo .otherInfo{
-        padding: 3vw 0 3vw 0;
-        margin:0;
-        row-gap: 2vw;
-    }
-
-    .userInfo .photo{
-        width:20vw;
-        height:20vw;
-        margin:2vw;
-    }
-    .questions .questions-header{
-        font-size:22px ;
-        width:96vw;
-        text-align: center;
-        margin:0;
-
-    }
-
-    .questions{
-        row-gap: 3vw;
-        border:none;
-    }
-
-    .questions .question{
-        padding:2vw;
-
-    }
-
-    .registration-date{
-        margin: 0;
-    }
-
-    .mySub .mySub-collections{
-        justify-content: center;
-        row-gap: 2vw;
-        padding: 1vw;
-    }
 }
