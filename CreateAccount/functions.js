@@ -1,5 +1,5 @@
 
-function getData(e){
+function getData(){
     let button=document.getElementById("endbutton");
 
     button.addEventListener("click", function(event){
