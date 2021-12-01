@@ -19,6 +19,12 @@
     margin:0;
 }
 
+a,a:hover, a:active, a:visited{
+    text-decoration: none;
+    color:white;
+}
+
+
 .header{
     display:flex;
     justify-content: center;
@@ -112,13 +118,12 @@
     align-items: center;
 
 }
-.about, .services, .contacts span{
-    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
-    transition: text-decoration-color 300ms;
-}
-.about:hover, .services:hover, .contacts span:hover{
+
+.about:hover,  .services:hover, .contacts span:hover{
     transform: translateX(-2px);
     transform: translateY(2px);
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    transition: 0.3s;
     text-decoration-color: rgba(255, 255, 255, 1);
 }
 

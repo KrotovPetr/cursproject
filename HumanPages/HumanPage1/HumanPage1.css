@@ -73,7 +73,6 @@ body{
     justify-content: center;
     align-items: center;
     flex:4 4 auto;
-
     background: #292536;
     border-radius: 10px;
     margin:0 1vw 1vw 1vw;
@@ -508,4 +507,10 @@ a, a:hover, a:active, a:visited{
 
 
 
+}
+
+@media(min-width: 1600px){
+    .mainp .infoabout .biography .story{
+        font-size: 22px;
+    }
 }

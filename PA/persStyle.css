@@ -217,6 +217,13 @@ body {
     height:fit-content;
     cursor: pointer;
     margin:1vw;
+    text-align: center;
+}
+
+.questions .question:nth-child(4){
+    background: #a91c52;
+    max-width: 200px;
+    max-height: 60px;
 }
 
 .questions .question:not(hover){
@@ -225,12 +232,15 @@ body {
 
 }
 
-.questions .question:hover{
+.questions .question:nth-child(n):hover{
     background: #ffffff;
-    color:black;
     transition: ease-in-out 1s;
 }
 
+.questions .question:nth-child(n):hover a{
+    color:black;
+    transition: ease-in-out 1s;
+}
 @media (min-width: 200px) and (max-width: 1200px){
     .main-part{
         row-gap: 4vw;
@@ -257,7 +267,7 @@ body {
     .questions .questions-header{
         font-size:22px ;
         width:96vw;
-        padding:2vw 0 2vw 0;
+        text-align: center;
         margin:0;
 
     }

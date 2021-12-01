@@ -4,6 +4,11 @@
     padding:0;
 }
 
+a, a:visited{
+    text-decoration: none;
+    color: #8d8b9a;
+}
+
 body{
     display:flex;
     flex-flow:column nowrap;
@@ -237,5 +242,19 @@ body .formfield .form{
         width:80vw;
         align-items: flex-start;
         row-gap: 3vw;
+    }
+}
+
+
+@media (min-width:1600px){
+    .form .fields{
+        width:60vw;
+        height:70vh;
+
+    }
+
+    body .formfield .form{
+        height: fit-content;
+        margin: 1vw;
     }
 }

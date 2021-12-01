@@ -25,7 +25,7 @@ function getData(e){
           if(emailData===emailsArr[i]){
               if(passData===passArr[i]){
                   flag=true;
-                  document.location.href = "PAP.html";
+                  document.location.href = "/cursproject/PA/PAP.html";
               }
               else{
                   alert("Неверный пароль");
