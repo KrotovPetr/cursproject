@@ -292,12 +292,14 @@ body{
 
 .reports .report-field{
     left:100vw;
-    animation: slide 200s infinite;
+    -moz-animation: slider 200s infinite;
+    -webkit-animation:slider 200s infinite ;
 }
 
 .photo-gallery .photo-field{
     left:-300vw;
-    animation: slider 200s infinite;
+    -moz-animation: slider 200s infinite;
+    -webkit-animation:slider 200s infinite ;
 }
 .reports .report-field, .photo-gallery .photo-field{
     width:fit-content;
@@ -513,6 +515,7 @@ body{
 
     .main-part .head-part .description .info{
         width:96vw;
+        margin:0;
     }
     .main-part .head-part  .photo{
         width:96vw;
